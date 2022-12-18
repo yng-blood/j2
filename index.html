@@ -149,38 +149,21 @@ return C ;
 
     <h3>Source Code:</h3>
     <pre>
-    const Triangle_Check = (A,B,C) => {
-      if(A&lt;90 && B&lt;90 && C&lt;90){
-        return "acute"
-      }
-      else if(A&gt;=90 && A&lt;180){
-        if (B&lt;90 && C&lt;90){
-          return "obtuse"
-        }
-        else{
-          return undefined
-        }
-      }
-      else if(B&gt;=90 && B&lt;180){
-        if (A&lt;90 && C&lt;90){
-          return "obtuse"
-        }
-        else{
-          return undefined
-        }
-      }
-      else if(C&gt;=90 && C&lt;180){
-        if(A&lt;90 && B&lt;90){
-          return "obtuse"
-        }
-        else{
-          return undefined
-        }
-      }
-      else{
-        return undefined
-      }
-    };
+   const Triangle_Check = (A,B,C) => {
+ if (A > 90 && B> 90 ){
+    return "acute";
+    }
+    else if (C>90 ){
+    return "acute";
+    }
+    else if(A == 60 && B== 60) {
+    return "acute";
+    }else if(A < 90 && B< 90) {
+    return "obtuse";
+    } else if (C<90 ){
+    return "obtuse";
+    }
+};
     </pre>
 </body>
 
